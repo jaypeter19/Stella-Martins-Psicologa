@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Raleway', 'Roboto', sans-serif;
+}
+
+body {
+    background: #E3E6DE;
+}
+
+header .navbar {
+    background-color: #678785;
+}
