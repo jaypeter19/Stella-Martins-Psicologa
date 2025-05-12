@@ -12,3 +12,19 @@ body {
 header .navbar {
     background-color: #678785;
 }
+
+.navbar .navbar-collapse {
+    justify-content: space-between;
+}
+
+.navbar-collapse .navbar-nav .nav-link,
+.navbar-brand {
+    color: #E3E6DE
+}
+
+.navbar-nav .nav-item .icon{
+    background-color: #b4c8c4;
+    padding: 0em 0.5em;
+    border-radius: 5px;
+    color: #E3E6DE;
+}
