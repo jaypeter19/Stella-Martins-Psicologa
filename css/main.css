@@ -27,19 +27,21 @@ header .navbar {
     text-transform: uppercase;
 }
 
-.navbar-nav .nav-item .icon{
+.navbar-nav .nav-item .icon {
     background-color: #678785;
     border-radius: 5px;
     color: #b4c8c4;
     margin: 0 0.5em;
     padding: 0.2em 1em;
 }
-.navbar-nav .nav-item .icon:hover{
+
+.navbar-nav .nav-item .icon:hover {
     background-color: #E3E6DE;
     color: #678785;
     transition: ease-in-out 0.3s;
 }
-.navbar-nav .nav-item .icon i{
+
+.navbar-nav .nav-item .icon i {
     font-size: 1.2rem;
 }
 
@@ -47,24 +49,57 @@ section .main-section {
     display: flex;
 }
 
-.main-section .title h1{
+.main-section .title h1 {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
     color: #678785;
     margin: 1em auto;
 }
-.main-section .subtitle h2{
+
+.main-section .subtitle h2 {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
     color: #b4c8c4;
 }
 
-.main-section .subtitle a{
+.contato {
+    text-decoration: none;
     background-color: #00bb2d;
     color: #fff;
     padding: 0.5em 1em;
     border-radius: 15px;
     margin: 1em auto;
+}
+
+.container h3 {
+    margin: 1em auto;
+    font-size: 2rem;
+    color: #678785;
+    font-weight: 900;
+}
+
+.container p {
+    text-align: justify;
+    font-family: 'Roboto';
+}
+
+.help-section {
+    background-color: #dcded6;
+}
+
+.container .help {
+    flex-direction: row-reverse;
+}
+
+.container .help h3 {
+    text-align: right;
+}
+
+footer .footer {
+    background-color: #678785;
+    color: #E3E6DE;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
