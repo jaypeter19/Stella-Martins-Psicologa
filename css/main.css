@@ -89,15 +89,7 @@ section .main-section {
 }
 
 .help-section {
-    background-color: #dcded6;
-}
-
-.container .help {
-    flex-direction: row-reverse;
-}
-
-.container .help h3 {
-    text-align: right;
+    background-color: #d2d8d2;
 }
 
 footer .footer {
