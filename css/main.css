@@ -92,6 +92,17 @@ section .main-section {
     background-color: #d2d8d2;
 }
 
+
+.faq-accordion .accordion .accordion-item .accordion-button {
+    background-color: #678785;
+    color: #fff;
+    font-weight: 700;
+}
+
+.faq-accordion .accordion .accordion-item .accordion-body {
+    font-weight: 600;
+}
+
 footer .footer {
     background-color: #678785;
     color: #E3E6DE;
