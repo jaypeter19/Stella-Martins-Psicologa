@@ -50,6 +50,7 @@ header .navbar {
 
 section .main-section {
     display: flex;
+    position: relative;
 }
 
 .main-section .title h1 {
@@ -65,6 +66,11 @@ section .main-section {
     font-weight: 700;
     text-align: left;
     color: #b4c8c4;
+}
+
+.main-section .Stella {
+    position: absolute;
+    right: 0;
 }
 
 .contato {
