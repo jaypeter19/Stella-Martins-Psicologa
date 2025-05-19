@@ -199,9 +199,10 @@ footer .footer .icon {
     .navbar-collapse .navbar-nav {
         align-items: flex-start;
     }
+
     .navbar-nav .nav-item .icon {
-    margin: 0.2em auto;
-}
+        margin: 0.2em auto;
+    }
 
     h1 {
         font-size: 1rem;
@@ -255,6 +256,13 @@ footer .footer .icon {
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+    .navbar-collapse .navbar-nav {
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item .icon {
+        margin: 0.2em auto;
+    }
 
     .main-section .Stella-photo .Stella {
         right: 0;
@@ -270,4 +278,27 @@ footer .footer .icon {
     }
 
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .navbar-collapse .navbar-nav {
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item .icon {
+        margin: 0.2em auto;
+    }
+
+    .main-section .Stella-photo .Stella {
+        right: 0;
+        bottom: 0;
+    }
+
+    .about-section .stella-img {
+        width: 45%;
+    }
+
+    .about-section .Stella-Perfil {
+        height: 100%;
+    }
 }
