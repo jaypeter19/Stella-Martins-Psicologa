@@ -120,8 +120,20 @@ header .navbar {
     align-items: center;
 }
 
+.about-section .about{
+    justify-content: space-between;
+}
+
+.about-section .stella-img{
+    position: relative;
+    width: 30%;
+    padding: 10px;
+    background: #678785;
+}
+
 .about-section .Stella-Perfil {
-    max-width: 50%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .beneficios-section h4 {
