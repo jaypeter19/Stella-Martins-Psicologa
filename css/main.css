@@ -8,6 +8,7 @@
 
 body {
     background: #E3E6DE;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -51,7 +52,7 @@ p {
 header .navbar {
     background-color: #b4c8c4;
     box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-    padding: 0.5em;
+    padding: 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -94,15 +95,12 @@ header .navbar {
 }
 
 .navbar-nav .nav-item .icon {
+    font-size: 1.5rem;
     background-color: #678785;
     border-radius: 50%;
     color: #b4c8c4;
     margin: 0 0.5em;
     padding: 0.2em 0.5em;
-}
-
-.navbar-nav .nav-item .icon i {
-    font-size: 1.5rem;
 }
 
 .navbar-nav .nav-item .icon:hover {
@@ -115,10 +113,10 @@ header .navbar {
 /* SECTION CSS */
 
 .main-section .title h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-align: left;
-    color: #000;
+    color: #678785;
 }
 
 .main-section .Stella-photo {
@@ -133,11 +131,7 @@ header .navbar {
     width: auto;
 }
 
-.teraphy-section {
-    background-color: #b4c8c4;
-}
-
-.help-section {
+.teraphy-section, .help-section{
     background-color: #d2d8d2;
 }
 
@@ -209,6 +203,7 @@ footer .footer {
 }
 
 footer .footer .icon {
+    font-size: 1.5rem;
     background-color: #b4c8c4;
     border-radius: 50%;
     color: #678785;
@@ -216,8 +211,11 @@ footer .footer .icon {
     padding: 0.2em 0.5em;
 }
 
-footer .footer .icon {
-    font-size: 1.5rem;
+
+footer .footer .icon:hover {
+     background-color: #E3E6DE;
+    color: #678785;
+    transition: ease-in-out 0.3s;
 }
 
 
