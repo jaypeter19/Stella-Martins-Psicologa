@@ -196,6 +196,13 @@ footer .footer .icon {
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
 
+    .navbar-collapse .navbar-nav {
+        align-items: flex-start;
+    }
+    .navbar-nav .nav-item .icon {
+    margin: 0.2em auto;
+}
+
     h1 {
         font-size: 1rem;
         margin: 8em 0em 1em 0em;
@@ -216,7 +223,8 @@ footer .footer .icon {
     .main-section .title h2 {
         font-size: 1rem;
     }
-    .contato{
+
+    .contato {
         font-size: 0.9rem;
     }
 
