@@ -154,5 +154,17 @@ footer .footer {
     text-align: center;
 }
 
+footer .footer .icon {
+    background-color: #b4c8c4;
+    border-radius: 5px;
+    color: #678785;
+    margin: 0 0.5em;
+    padding: 0.2em 1em;
+}
+footer .footer .icon svg{
+    height: 2em;
+    width: auto;
+}
+
 
 /* RESPONSIVE CSS */
