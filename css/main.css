@@ -70,6 +70,7 @@ header .navbar {
     margin: 0 0.5em;
     padding: 0.2em 0.5em;
 }
+
 .navbar-nav .nav-item .icon i {
     font-size: 1.5rem;
 }
@@ -120,11 +121,11 @@ header .navbar {
     align-items: center;
 }
 
-.about-section .about{
+.about-section .about {
     justify-content: space-between;
 }
 
-.about-section .stella-img{
+.about-section .stella-img {
     position: relative;
     width: 30%;
     padding: 10px;
@@ -141,6 +142,15 @@ header .navbar {
     font-size: 1.2rem;
     font-weight: 700;
     color: #678785;
+}
+
+.beneficios-section .fa-stack {
+    color: #00bb2d;
+}
+
+#service_p {
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 
@@ -187,13 +197,14 @@ footer .footer .icon {
 @media screen and (min-width: 320px) and (max-width: 576px) {
 
     h1 {
-        font-size: 1.2rem;
-        margin: 5em 0em 1em 0em;
+        font-size: 1rem;
+        margin: 8em 0em 1em 0em;
     }
 
     h2 {
         font-size: 1rem;
     }
+
     h3 {
         font-size: 1rem;
     }
@@ -203,17 +214,52 @@ footer .footer .icon {
     }
 
     .main-section .title h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
-    .teraphy-section .teraphy{
+    .contato{
+        font-size: 0.9rem;
+    }
+
+    .main-section .Stella-photo .Stella {
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        width: auto;
+    }
+
+    .teraphy-section .teraphy {
         justify-content: center;
     }
 
     .help-section .help {
         justify-content: center;
     }
-    .about-section .about{
+
+    .about-section .about {
         flex-direction: column-reverse;
+        align-items: center;
     }
+
+    .about-section .stella-img {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .main-section .Stella-photo .Stella {
+        right: 0;
+        bottom: 0;
+    }
+
+    .about-section .stella-img {
+        width: 50%;
+    }
+
+    .about-section .Stella-Perfil {
+        height: 100%;
+    }
+
 
 }
