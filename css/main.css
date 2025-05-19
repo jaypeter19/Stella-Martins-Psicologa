@@ -63,6 +63,10 @@ header .navbar {
     align-items: center;
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: #000;
+}
+
 .navbar-nav .nav-item .icon {
     background-color: #678785;
     border-radius: 50%;
@@ -88,7 +92,7 @@ header .navbar {
     font-size: 1.3rem;
     font-weight: 700;
     text-align: left;
-    color: #b4c8c4;
+    color: #000;
 }
 
 .main-section .Stella-photo {
