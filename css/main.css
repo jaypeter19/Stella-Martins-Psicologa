@@ -65,13 +65,13 @@ header .navbar {
 
 .navbar-nav .nav-item .icon {
     background-color: #678785;
-    border-radius: 5px;
+    border-radius: 50%;
     color: #b4c8c4;
     margin: 0 0.5em;
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
 }
 .navbar-nav .nav-item .icon i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .navbar-nav .nav-item .icon:hover {
@@ -158,15 +158,14 @@ footer .footer {
 
 footer .footer .icon {
     background-color: #b4c8c4;
-    border-radius: 5px;
+    border-radius: 50%;
     color: #678785;
     margin: 0 0.5em;
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
 }
 
-footer .footer .icon svg {
-    height: 2em;
-    width: auto;
+footer .footer .icon {
+    font-size: 1.5rem;
 }
 
 
