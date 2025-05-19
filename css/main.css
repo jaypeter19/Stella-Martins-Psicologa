@@ -39,6 +39,13 @@ p {
     margin: 1em auto;
 }
 
+.contato:hover {
+    background-color: #00bb2ca1;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+
 /* HEADER CSS */
 
 header .navbar {
@@ -65,6 +72,25 @@ header .navbar {
 
 .navbar-nav .nav-item .nav-link {
     color: #000;
+}
+
+.navbar .nav-item .nav-link-underline::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 0;
+    height: 3px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E3E6DE;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+.navbar .nav-item .nav-link-underline:hover::before {
+    visibility: visible;
+    width: 100%;
 }
 
 .navbar-nav .nav-item .icon {
