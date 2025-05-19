@@ -10,7 +10,7 @@ body {
     background: #E3E6DE;
 }
 
-h1{
+h1 {
     font-size: 1.3rem;
     font-weight: 700;
     text-align: left;
@@ -25,7 +25,7 @@ h3 {
     font-weight: 900;
 }
 
- p {
+p {
     text-align: justify;
     font-family: 'Roboto';
 }
@@ -109,21 +109,21 @@ header .navbar {
     background-color: #d2d8d2;
 }
 
-.faq-section{
+.faq-section {
     margin: 5em auto;
 }
 
-.faq-section .faq-title{
+.faq-section .faq-title {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-section .Stella-Perfil{
+.about-section .Stella-Perfil {
     max-width: 50%;
 }
 
-.beneficios-section h4{
+.beneficios-section h4 {
     margin: 1.5em auto;
     font-size: 1.2rem;
     font-weight: 700;
@@ -150,7 +150,8 @@ footer .footer {
     font-size: 1.3rem;
     font-weight: 700;
 }
-.footer p{
+
+.footer p {
     text-align: center;
 }
 
@@ -161,10 +162,46 @@ footer .footer .icon {
     margin: 0 0.5em;
     padding: 0.2em 1em;
 }
-footer .footer .icon svg{
+
+footer .footer .icon svg {
     height: 2em;
     width: auto;
 }
 
 
 /* RESPONSIVE CSS */
+
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+
+    h1 {
+        font-size: 1.2rem;
+        margin: 5em 0em 1em 0em;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .main-section .title h2 {
+        font-size: 1.2rem;
+    }
+    .teraphy-section .teraphy{
+        justify-content: center;
+    }
+
+    .help-section .help {
+        justify-content: center;
+    }
+    .about-section .about{
+        flex-direction: column-reverse;
+    }
+
+}
