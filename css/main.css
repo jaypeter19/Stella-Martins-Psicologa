@@ -15,7 +15,7 @@ h1 {
     font-size: 1.3rem;
     font-weight: 700;
     text-align: left;
-    color: #678785;
+    color: #4e5a4e;
     margin: 8em 0em 1em 0em;
 }
 
@@ -96,16 +96,16 @@ header .navbar {
 
 .navbar-nav .nav-item .icon {
     font-size: 1.5rem;
-    background-color: #678785;
+    background-color: #E3E6DE;
     border-radius: 50%;
-    color: #b4c8c4;
+    color: #4e5a4e;
     margin: 0 0.5em;
     padding: 0.2em 0.5em;
 }
 
 .navbar-nav .nav-item .icon:hover {
-    background-color: #E3E6DE;
-    color: #678785;
+    background-color: #678785;
+    color: #E3E6DE;
     transition: ease-in-out 0.3s;
 }
 
@@ -116,7 +116,7 @@ header .navbar {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: left;
-    color: #678785;
+    color: #4e5a4e;
 }
 
 .main-section .Stella-photo {
@@ -153,7 +153,7 @@ header .navbar {
     position: relative;
     width: 30%;
     padding: 10px;
-    background: #678785;
+    background: #4e5a4e;
 }
 
 .about-section .Stella-Perfil {
@@ -165,7 +165,7 @@ header .navbar {
     margin: 1.5em auto;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #678785;
+    color: #4e5a4e;
 }
 
 .beneficios-section .fa-stack {
@@ -174,13 +174,14 @@ header .navbar {
 
 #service_p {
     text-align: center;
-    font-size: 0.9rem;
+    color: #000;
+    font-size: 1rem;
 }
 
 
 /* ACCORDION CSS */
 .faq-accordion .accordion .accordion-item .accordion-button {
-    background-color: #678785;
+    background-color: #4e5a4e;
     color: #fff;
     font-weight: 700;
 }
@@ -192,7 +193,7 @@ header .navbar {
 /* FOOTER */
 
 footer .footer {
-    background-color: #678785;
+    background-color: #4e5a4e;
     color: #E3E6DE;
     font-size: 1.3rem;
     font-weight: 700;
@@ -204,17 +205,17 @@ footer .footer {
 
 footer .footer .icon {
     font-size: 1.5rem;
-    background-color: #b4c8c4;
+    background-color: #E3E6DE;
     border-radius: 50%;
-    color: #678785;
+    color: #4e5a4e;
     margin: 0 0.5em;
     padding: 0.2em 0.5em;
 }
 
 
 footer .footer .icon:hover {
-     background-color: #E3E6DE;
-    color: #678785;
+     background-color: #678785;
+    color: #E3E6DE;
     transition: ease-in-out 0.3s;
 }
 
