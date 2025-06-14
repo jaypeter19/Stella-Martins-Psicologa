@@ -264,6 +264,7 @@ footer .footer .icon:hover {
         right: 0;
         bottom: 0;
         height: 60%;
+        max-height: 195px;
         width: auto;
     }
 
@@ -298,6 +299,7 @@ footer .footer .icon:hover {
     .main-section .Stella-photo .Stella {
         right: 0;
         bottom: 0;
+        max-height: 280px;
     }
 
     .about-section .stella-img {
