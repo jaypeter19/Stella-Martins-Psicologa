@@ -153,6 +153,7 @@ header .navbar {
 .about-section .stella-img {
     position: relative;
     width: 30%;
+    min-width: 40%;
     padding: 10px;
     background: #4e5a4e;
 }
