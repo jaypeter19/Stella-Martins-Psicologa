@@ -27,18 +27,16 @@
   <!-- Font Awesome icons (free)-->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <!-- Bootstrap Library -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <!-- Animation Library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!--CSS Stylesheet -->
+ <!--CSS Stylesheet -->
   <link href="/css/main.css" rel="stylesheet">
   <!-- Google Search Console Meta Tag -->
   <meta name="google-site-verification" content="NhvZxrhyM7Lp1yoWpN7Vzb8HyaYm8vs6dntPjNB_qmo" />
@@ -60,20 +58,20 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-link-underline" href="#sobre">Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-underline" href="#duvidas">Dúvidas</a>
+              <a class="nav-link" href="#duvidas">Dúvidas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-underline" href="#beneficios">Benefícios</a>
+              <a class="nav-link" href="#beneficios">Benefícios</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="https://wa.me/5551982682331" aria-label="WhatsApp" target="_blank"><i
+            <li class="nav-item nav-item-icon">
+              <a class="nav-link-icon" href="https://wa.me/5551982682331" aria-label="WhatsApp" target="_blank"><i
                   class="bi bi-whatsapp"></i></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="https://www.instagram.com/psico.stellaxm/" aria-label="Instagram"
+            <li class="nav-item nav-item-icon">
+              <a class="nav-link-icon" href="https://www.instagram.com/psico.stellaxm/" aria-label="Instagram"
                 target="_blank"><i class="bi bi-instagram"></i></a>
             </li>
           </ul>
@@ -82,25 +80,28 @@
     </nav>
   </header>
   <main>
-    <section>
-      <div class="container main-section">
-        <div class="row">
-          <div class="col-8 col-md-6 col-lg-6 title animate__fadeInLeft">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-6 hero-titles">
             <h1>Suas emoções fazem parte de quem você é.</h1>
-            <h2>E o primeiro passo para lidar com elas é abraçá-las!<br><br>Vamos juntos?</h2>
-            <a href="https://wa.me/5551982682331" target="_blank" aria-label="WhatsApp" class="btn contato"><i
+            <h2>E o primeiro passo para lidar com elas é abraçá-las!</h2>
+            <h2>Vamos juntos?</h2>
+            <a href="https://wa.me/5551982682331" target="_blank" aria-label="WhatsApp" class="contato"><i
                 class="bi bi-whatsapp"></i>
               Agende sua sessão agora</a>
           </div>
-          <div class="col-4 col-md-6 col-lg-6 Stella-photo animate__fadeInRight">
-            <img src="assets/IMG-1.png" alt="Psicóloga Stella Martins" class="img-fluid Stella">
+          <div class="col-6 text-center hero-photo">
+            <img src="assets/IMG-1.png" alt="Psicóloga Stella Martins" class="stella-photo">
           </div>
         </div>
       </div>
     </section>
+    <!-- Teraphy Section -->
     <section class="teraphy-section">
       <div class="container">
-        <div class="row teraphy animate__fadeIn">
+        <div class="row teraphy">
           <div class="col-lg-8">
             <h3>Como funciona a psicoterapia?</h3>
           </div>
@@ -123,11 +124,11 @@
     </section>
     <section class="help-section">
       <div class="container">
-        <div class="row help">
-          <div class="col-8 col-md-4 col-lg-6">
+        <div class="row align-items-center">
+          <div class="col-md-4 col-lg-6">
             <img src="/assets/IMG-Terapia.png" alt="Terapia Cognitivo Comportamental (TCC)" class="img-fluid">
           </div>
-          <div class="col-md-8 col-lg-6 animate__zoomIn">
+          <div class="col-md-8 col-lg-6">
             <h3>Como posso te ajudar</h3>
             <p>Como psicóloga clínica, percebo que algumas demandas são mais frequentes na
               prática clínica. Através da abordagem da <b>terapia cognitivo comportamental (TCC),</b> podemos
@@ -144,8 +145,8 @@
         </div>
       </div>
     </section>
-    <section id="duvidas">
-      <div class="container faq-section">
+    <section id="duvidas" class="faq-section">
+      <div class="container">
         <div class="row">
           <div class="col-lg-6 faq-title">
             <h3>Principais Dúvidas</h3>
@@ -245,8 +246,8 @@
         </div>
       </div>
     </section>
-    <section id="beneficios">
-      <div class="container beneficios-section my-4">
+    <section id="beneficios" class="benefits-section">
+      <div class="container my-4">
         <div class="row">
           <div class="col-12 text-center">
             <h3>Benefícios da Psicoterapia</h3>
@@ -259,7 +260,7 @@
               <i class="fa-solid fa-brain fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Autoconhecimento</h4>
-            <p class="text-muted" id="service_p">Ao refletir sobre sua história, emoções e padrões de comportamento, a
+            <p class="text-muted">Ao refletir sobre sua história, emoções e padrões de comportamento, a
               pessoa compreende melhor quem é, o que a motiva e o que a limita. A psicoterapia oferece um espaço seguro
               para essa descoberta, fortalecendo a autoestima e promovendo mudanças mais conscientes.
             </p>
@@ -270,7 +271,7 @@
               <i class="fa-solid fa-heart fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Qualidade de Vida</h4>
-            <p class="text-muted" id="service_p">A terapia melhora a qualidade de vida ao ajudar a lidar com emoções,
+            <p class="text-muted">A terapia melhora a qualidade de vida ao ajudar a lidar com emoções,
               reduzir o estresse e enfrentar desafios com mais equilíbrio. Com mais autoconhecimento, a pessoa faz
               escolhas alinhadas com seus valores, vivendo com mais bem-estar e sentido.
             </p>
@@ -281,7 +282,7 @@
               <i class="fa-solid fa-unlock fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Inteligência Emocional</h4>
-            <p class="text-muted" id="service_p">A psicoterapia ensina a identificar, entender e lidar com as emoções,
+            <p class="text-muted">A psicoterapia ensina a identificar, entender e lidar com as emoções,
               favorecendo reações mais equilibradas diante dos conflitos e relações mais empáticas e saudáveis.
             </p>
           </div>
@@ -291,17 +292,17 @@
               <i class="fa-regular fa-face-grin-beam fa-stack-1x fa-inverse"></i>
             </span>
             <h4>Comunicação Assertiva</h4>
-            <p class="text-muted" id="service_p">A terapia ajuda a expressar sentimentos e necessidades de forma clara e
+            <p class="text-muted">A terapia ajuda a expressar sentimentos e necessidades de forma clara e
               respeitosa. Com isso, a pessoa aprende a dizer “não” quando necessário, escutar com empatia e se comunicar
               com mais segurança e equilíbrio.</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="sobre">
-      <div class="container about-section my-4">
-        <div class="row about">
-          <div class="col-md-6 col-lg-6 mt-3">
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <div class="row justify-content-between about-mobile">
+          <div class="col-md-6 col-lg-6">
             <h3>Sobre mim</h3>
             <p>Meu nome é em homenagem à minha bisavó, que também se chamava Stella.</p>
             <p>Desde sempre me interessei pelo cuidado e pela área da saúde, sempre buscando
@@ -311,12 +312,12 @@
             <p>Atualmente me dedico à psicologia clínica, buscando promover um espaço de
               escuta, acolhimento e autoconhecimento aos pacientes. Nas minhas horas vagas gosto
               muito de ler, ir ao cinema, jogar Beach Tennis e praticar yoga. Vamos nos conhecer melhor?</p>
-            <a href="https://wa.me/5551982682331" target="_blank" class="btn contato" aria-label="WhatsApp"><i
+            <a href="https://wa.me/5551982682331" target="_blank" class="contato" aria-label="WhatsApp"><i
                 class="bi bi-whatsapp"></i> Agende sua sessão
               agora</a>
           </div>
-          <div class="col-md-6 col-lg-6 stella-img text-center">
-            <img src="/assets/IMG-6-Black.jpg" alt="Psicóloga Stella Martins Perfil" class="img-fluid Stella-Perfil">
+          <div class="col-md-6 col-lg-6 about-photo text-center">
+            <img src="/assets/IMG-6-Black.jpg" alt="Psicóloga Stella Martins Perfil" class="stella-photo">
           </div>
         </div>
       </div>
@@ -329,9 +330,9 @@
           <p>Stella Xavier Martins <span aria-hidden="true">&copy;</span> 2025</p>
         </div>
         <div class="col-lg-10 mb-3 icon_footer text-center">
-          <a class="btn icon" href="https://www.instagram.com/psico.stellaxm/" aria-label="Instagram" target="_blank"><i
+          <a class="nav-link-icon" href="https://www.instagram.com/psico.stellaxm/" aria-label="Instagram" target="_blank"><i
               class="bi bi-instagram"></i></a>
-          <a class="btn icon" href="https://wa.me/5551982682331" aria-label="WhatsApp" target="_blank"><i
+          <a class="nav-link-icon" href="https://wa.me/5551982682331" aria-label="WhatsApp" target="_blank"><i
               class="bi bi-whatsapp"></i></a>
         </div>
       </div>

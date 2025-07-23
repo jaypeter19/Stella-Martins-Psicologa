@@ -1,82 +1,104 @@
-/* GENERAL CSS */
+/* VARIABLES */
+:root {
+    /* COLORS VARIABLES */
+    --black: #000;
+    --white: #fff;
+    --green: #4e5a4e;
+    --light-green: #678785;
+    --bg-light: #E3E6DE;
+    --bg-light-2: #d2d8d2;
+    --bg-green: #b4c8c4;
+    --bg-a-color: #00bb2d;
+    /* TEXT STYLES */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+/* GENERAL ELEMENTS CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Raleway', 'Roboto', sans-serif;
+    font-family: var(--primary-font);
 }
 
 body {
-    background: #E3E6DE;
+    background: var(--bg-light);
     overflow-x: hidden;
 }
 
 h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green);
+}
+
+h2 {
     font-size: 1.3rem;
     font-weight: 700;
-    text-align: left;
-    color: #4e5a4e;
-    margin: 8em 0em 1em 0em;
+    color: var(--green);
 }
 
 h3 {
-    margin: 1em auto;
     font-size: 2rem;
-    color: #678785;
     font-weight: 900;
     text-transform: uppercase;
+    color: var(--light-green);
 }
 
 p {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
     text-align: justify;
-    font-family: 'Roboto';
 }
 
-.contato {
+a.contato {
+    display: inline-block;
+    box-sizing: border-box;
     text-decoration: none;
-    background-color: #00bb2d;
-    color: #fff;
-    padding: 0.5em 1em;
+    background-color: var(--bg-a-color);
+    color: var(--white);
     border-radius: 15px;
-    margin: 1em auto;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.contato:hover {
-    background-color: #00bb2ca1;
-    color: #fff;
-    transition: ease-in-out 0.3s;
+a.contato:hover {
+    opacity: 0.75;
 }
 
-
-/* HEADER CSS */
+/* NAVBAR STYLES */
 
 header .navbar {
-    background-color: #b4c8c4;
+    background-color: var(--bg-green);
     box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
     padding: 0;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 3;
 }
 
-.navbar .navbar-collapse {
-    justify-content: end;
+.navbar .navbar-brand {
+    padding: 8px 0 0 0;
+    margin: 0;
 }
 
 .navbar .navbar-brand img {
-    height: 4em;
+    height: 80px;
     width: auto;
 }
 
-.navbar-collapse .navbar-nav {
+.navbar .navbar-collapse {
     align-items: center;
+    justify-content: end;
 }
 
-.navbar-nav .nav-item .nav-link {
-    color: #000;
+.navbar .navbar-collapse .nav-link {
+    font-size: 1rem;
+    color: var(--black);
 }
 
-.navbar .nav-item .nav-link-underline::before {
+.navbar .navbar-collapse .nav-link::before {
     content: '';
     position: relative;
     display: block;
@@ -86,105 +108,76 @@ header .navbar {
     left: 50%;
     transform: translateX(-50%);
     background-color: #E3E6DE;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out;
 
 }
 
-.navbar .nav-item .nav-link-underline:hover::before {
+.navbar .navbar-collapse .nav-link:hover::before {
     visibility: visible;
     width: 100%;
 }
 
-.navbar-nav .nav-item .icon {
+.nav-link-icon {
     font-size: 1.5rem;
-    background-color: #E3E6DE;
+    background-color: var(--bg-light);
     border-radius: 50%;
-    color: #4e5a4e;
-    margin: 0 0.5em;
-    padding: 0.2em 0.5em;
+    color: var(--green);
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-item .icon:hover {
-    background-color: #678785;
-    color: #E3E6DE;
-    transition: ease-in-out 0.3s;
+.nav-link-icon:hover {
+    background-color: var(--light-green);
+    color: var(--white);
 }
 
+/* HERO SECTION STYLES*/
 
-/* SECTION CSS */
-
-.main-section .title h2 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: left;
-    color: #4e5a4e;
+.hero-section .hero-titles h1 {
+    margin: 0 0 1rem 0;
 }
 
-.main-section .Stella-photo {
-    position: relative;
+.hero-section .hero-titles h2 {
+    margin: 1rem 0 1.5rem 0;
 }
 
-.main-section .Stella-photo .Stella {
-    position: absolute;
-    right: 5em;
-    bottom: 0;
-    height: 100%;
-    width: auto;
+.hero-section .hero-photo .stella-photo {
+    width: 50%;
 }
 
-.teraphy-section, .help-section{
-    background-color: #d2d8d2;
+/* THERAPY AND HELP SECTION STYLES */
+
+.teraphy-section,
+.help-section {
+    background-color: var(--bg-light-2);
 }
+
+.teraphy-section h3 {
+    margin: 1.5rem auto;
+}
+
+.help-section h3 {
+    margin: 1.5rem auto;
+}
+
+/* FAQ SECTION STYLES */
 
 .faq-section {
-    margin: 5em auto;
+    margin: 5rem auto;
 }
 
 .faq-section .faq-title {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.about-section .about {
-    justify-content: space-between;
-}
-
-.about-section .stella-img {
-    position: relative;
-    width: 30%;
-    min-width: 40%;
-    padding: 10px;
-    background: #4e5a4e;
-}
-
-.about-section .Stella-Perfil {
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.beneficios-section h4 {
-    margin: 1.5em auto;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #4e5a4e;
-}
-
-.beneficios-section .fa-stack {
-    color: #00bb2d;
-}
-
-#service_p {
-    text-align: center;
-    color: #000;
-    font-size: 1rem;
-}
-
-
 /* ACCORDION CSS */
 .faq-accordion .accordion .accordion-item .accordion-button {
-    background-color: #4e5a4e;
-    color: #fff;
+    background-color: var(--green);
+    color: var(--white);
     font-weight: 700;
 }
 
@@ -192,11 +185,66 @@ header .navbar {
     font-weight: 600;
 }
 
-/* FOOTER */
+
+/* BENEFITS SECTION */
+
+.benefits-section {
+    margin: 5rem auto;
+}
+
+.benefits-section h3 {
+    margin: 1.5rem auto;
+}
+
+.benefits-section h4 {
+    margin: 1.5rem auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.benefits-section .fa-stack {
+    color: var(--bg-a-color);
+}
+
+.benefits-section .text-muted {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ABOUT SECTION STYLES */
+
+.about-section {
+    margin: 1.5rem auto;
+}
+
+.about-section h3 {
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    margin: 1.5rem auto;
+}
+
+.about-section .about-photo {
+    background: var(--green);
+    width: 30%;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.about-section .about-photo .stella-photo {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+/* FOOTER STYLES */
 
 footer .footer {
-    background-color: #4e5a4e;
-    color: #E3E6DE;
+    background-color: var(--green);
+    color: var(--bg-light);
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -205,39 +253,32 @@ footer .footer {
     text-align: center;
 }
 
-footer .footer .icon {
-    font-size: 1.5rem;
-    background-color: #E3E6DE;
-    border-radius: 50%;
-    color: #4e5a4e;
-    margin: 0 0.5em;
-    padding: 0.2em 0.5em;
-}
-
-
-footer .footer .icon:hover {
-     background-color: #678785;
-    color: #E3E6DE;
-    transition: ease-in-out 0.3s;
-}
-
 
 /* RESPONSIVE CSS */
 
+@media only screen and (max-width: 1200px) {
 
-@media screen and (min-width: 320px) and (max-width: 576px) {
-
-    .navbar-collapse .navbar-nav {
-        align-items: flex-start;
+    .hero-section .hero-photo .stella-photo {
+        width: 70%;
     }
 
-    .navbar-nav .nav-item .icon {
-        margin: 0.2em auto;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .hero-section .hero-photo .stella-photo {
+        width: 100%;
     }
 
+    .about-section .about-photo {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 1rem;
-        margin: 8em 0em 1em 0em;
     }
 
     h2 {
@@ -248,90 +289,107 @@ footer .footer .icon:hover {
         font-size: 1rem;
     }
 
-    p {
-        font-size: 1rem;
+    a.contato {
+        font-size: 0.8rem;
+        padding: 0.35rem;
     }
 
-    .main-section .title h2 {
-        font-size: 1rem;
+    .hero-section .hero-titles h1 {
+        margin: 3rem 0 0 0;
     }
 
-    .contato {
-        font-size: 0.9rem;
+    .hero-section .hero-titles h2 {
+        margin: 1rem 0;
     }
 
-    .main-section .Stella-photo .Stella {
-        right: 0;
-        bottom: 0;
-        height: 60%;
-        max-height: 195px;
-        width: auto;
+    .hero-section .hero-photo {
+        margin-top: 3rem;
     }
 
-    .teraphy-section .teraphy {
-        justify-content: center;
+    .hero-section .hero-photo .stella-photo {
+        width: 100%;
     }
 
-    .help-section .help {
-        justify-content: center;
-    }
-
-    .about-section .about {
+    .about-section .about-mobile {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .about-section .stella-img {
+    .about-section .about-photo {
         width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .about-section a.contato {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 455px) {
+
+
+    .nav-item-icon {
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 0.75rem;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    a.contato {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    .hero-section .hero-titles h1 {
+        margin: 5rem 0 0 0;
+    }
+
+    .hero-section .hero-titles h2 {
+        margin: 0.5rem 0;
+    }
+
+    .hero-section .hero-photo {
+        margin-top: 4rem;
+    }
+
+    .hero-section .hero-photo .stella-photo {
+        width: 100%;
+    }
+
+    .faq-section .faq-title h3 {
+        margin-bottom: 1rem;
+    }
+
+    .about-section .about-mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-section .about-photo {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .about-section a.contato {
+        font-size: 1rem;
     }
 
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    .navbar-collapse .navbar-nav {
-        align-items: flex-start;
-    }
-
-    .navbar-nav .nav-item .icon {
-        margin: 0.2em auto;
-    }
-
-    .main-section .Stella-photo .Stella {
-        right: 0;
-        bottom: 0;
-        max-height: 280px;
-    }
-
-    .about-section .stella-img {
-        width: 50%;
-    }
-
-    .about-section .Stella-Perfil {
-        height: 100%;
-    }
-
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .navbar-collapse .navbar-nav {
-        align-items: flex-start;
-    }
-
-    .navbar-nav .nav-item .icon {
-        margin: 0.2em auto;
-    }
-
-    .main-section .Stella-photo .Stella {
-        right: 0;
-        bottom: 0;
-    }
-
-    .about-section .stella-img {
-        width: 45%;
-    }
-
-    .about-section .Stella-Perfil {
-        height: 100%;
+@media only screen and (max-width: 320px) {
+    a.contato {
+        font-size: 0.55rem;
+        padding: 0.3rem;
     }
 }
