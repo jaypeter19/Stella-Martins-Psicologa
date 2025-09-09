@@ -261,6 +261,29 @@ footer .footer {
     text-align: center;
 }
 
+/* MODAL CSS */
+
+.modal-header .btn-close {
+    padding-right: 30px;
+}
+
+.modal-body label {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.modal-footer .btn-primary {
+    background-color: var(--bg-a-color);
+    border: none;
+    color: #fff;
+    transition: all ease-in;
+}
+
+.modal-footer .btn-primary:hover {
+    opacity: 0.8;
+}
+
+
 
 /* RESPONSIVE CSS */
 
